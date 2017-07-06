@@ -1,0 +1,22 @@
+{
+  "name": "step2",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "http-server ./public"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-concat": "^2.6.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-main-bower-files": "^1.6.2"
+  },
+  "dependencies": {
+    "angular-ui-router": "^1.0.3"
+  }
+}

@@ -1,0 +1,35 @@
+{
+  "name": "nodes",
+  "version": "1.0.3",
+  "description": "",
+  "main": "echo.js",
+  "scripts": {
+    "start": "node echo.js",
+    "test": "mocha --timeout 10000"
+  },
+  "repository": {
+    "type": "git",
+    "url": "http://borr.sam-solutions.net/dznor/echo-service-node-js.git"
+  },
+  "keywords": [
+    "node",
+    "express",
+    "os"
+  ],
+  "author": "geemli",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.17.2",
+    "chai": "^3.5.0",
+    "chai-html": "^1.1.4",
+    "config": "^1.26.1",
+    "express": "^4.13.4",
+    "mocha": "^2.5.3",
+    "morgan": "^1.8.1"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-http": "^2.0.1",
+    "mocha": "^2.5.3"
+  }
+}
