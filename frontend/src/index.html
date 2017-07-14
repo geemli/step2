@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>My index</title>
+
+    <style>.active { color: red; font-weight: bold; }</style>
+  </head>
+
+  <body>
+	<div ng-app="helloworld">
+		<div ng-controller="Hello">
+			<p>{{greeting}}</p>
+		</div>
+	</div>
+		
+
+	
+    <ui-view></ui-view>
+	<!-- inject:js -->
+	<!-- endinject -->
+
+  </body>
+</html>

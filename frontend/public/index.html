@@ -1,15 +1,23 @@
 <html>
   <head>
-    <script src="./dist/vendor.js"></script>
-    <script src="helloworld.js"></script>
-
-    <style>.active { color: red; font-weight: bold; }</style>
+    <!-- inject:css -->
+	  <link rel="stylesheet" href="bootstrap.min.css">
+	<!-- endinject -->
   </head>
-
-  <body ng-app="helloworld">
-    <a ui-sref="hello" ui-sref-active="active">Hello</a>
-    <a ui-sref="about" ui-sref-active="active">About</a>
-
-    <ui-view></ui-view>
+  <body>
+	<div class="container" ng-app="app">
+      <header ng-include="'nav.html'"></header>
+      <div ui-view></div>
+      <footer ng-include="'footer.html'"></footer>
+    </div>
   </body>
+  	<!-- inject:js -->
+  <script src="app.min.js"></script>
+  <script src="app.js"></script>
+  <script src="friends.js"></script>
+  <script src="metric.js"></script>
+  <script src="aboutCtrl.js"></script>
+  <script src="homeCtrl.js"></script>
+  <script src="metricCtrl.js"></script>
+  <!-- endinject -->
 </html>

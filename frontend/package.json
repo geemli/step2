@@ -5,7 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "http-server ./public"
+    "start": "http-server ./public -o"
   },
   "keywords": [],
   "author": "",
@@ -13,6 +13,7 @@
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-concat": "^2.6.1",
+    "gulp-inject": "^4.2.0",
     "gulp-load-plugins": "^1.5.0",
     "gulp-main-bower-files": "^1.6.2"
   },

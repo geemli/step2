@@ -5,6 +5,13 @@ var bodyParser = require('body-parser');
 var node = require('./model/node');
 var metric = require('./model/metric');
 
+   app.all('*', function(req, res, next) {
+           res.header('Access-Control-Allow-Origin', '*');
+           res.header('Access-Control-Allow-Methods', 'PUT, GET, POST, DELETE, OPTIONS');
+		   res.setHeader('Access-Control-Allow-Headers', 'X-Requested-With,content-type');
+           next();
+   });
+
 app.use(bodyParser.json());                                     
 app.use(bodyParser.urlencoded({extended: true}));               
 app.use(bodyParser.text());                                    

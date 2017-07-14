@@ -6,16 +6,16 @@ function getMetric(req, res) {
 	if(param == "cpu") {
 		res.send(JSON.stringify(os.cpus()));
 	} else if(param == "memory") {
-		var current_mem = os.freemem();
-		var max_mem = os.totalmem();
-		res.send('used ' + current_mem + ' from ' + max_mem);
+		var arr = [];
+		arr.push(os.freemem(), os.totalmem());
+		res.send(JSON.stringify(arr));
 	} else {
-		res.send("Please, choice other param");
+		res.send(JSON.stringify(['Please, choice other param']));
 	}
 }
 
 function getMetrics(req, res) {
-	res.send("cpu<br>memory");
+	res.send(JSON.stringify(["cpu", "memory"]));
 }
 
 module.exports = { getMetric, getMetrics };
